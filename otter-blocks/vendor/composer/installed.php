@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'codeinwp/otter-blocks',
-        'pretty_version' => '3.0.4',
-        'version' => '3.0.4.0',
+        'pretty_version' => '3.0.5',
+        'version' => '3.0.5.0',
         'reference' => null,
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
@@ -11,8 +11,8 @@
     ),
     'versions' => array(
         'codeinwp/otter-blocks' => array(
-            'pretty_version' => '3.0.4',
-            'version' => '3.0.4.0',
+            'pretty_version' => '3.0.5',
+            'version' => '3.0.5.0',
             'reference' => null,
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'codeinwp/themeisle-sdk' => array(
-            'pretty_version' => '3.3.30',
-            'version' => '3.3.30.0',
-            'reference' => '801a07604a297f02de3067948176f91b4c84bd8a',
+            'pretty_version' => '3.3.34',
+            'version' => '3.3.34.0',
+            'reference' => '2c525df1b692acff0c968faf67f5adf6f1263c7a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../codeinwp/themeisle-sdk',
             'aliases' => array(),
