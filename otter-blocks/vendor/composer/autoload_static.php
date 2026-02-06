@@ -4,50 +4,50 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb823d780538a4de103f62cac887db88d
+class ComposerStaticInit4530d8e3909c9fd175e971fb8ef4b055
 {
     public static $files = array (
         '16e4325dd9bdbbd2ce8c9530b088e50b' => __DIR__ . '/..' . '/codeinwp/themeisle-sdk/load.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        't' => 
+        't' =>
         array (
             'tubalmartin\\CssMin\\' => 19,
         ),
-        'e' => 
+        'e' =>
         array (
             'enshrined\\svgSanitize\\' => 22,
         ),
-        'S' => 
+        'S' =>
         array (
             'Stripe\\' => 7,
             'Sabberworm\\CSS\\' => 15,
         ),
-        'M' => 
+        'M' =>
         array (
             'Masterminds\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'tubalmartin\\CssMin\\' => 
+        'tubalmartin\\CssMin\\' =>
         array (
             0 => __DIR__ . '/..' . '/tubalmartin/cssmin/src',
         ),
-        'enshrined\\svgSanitize\\' => 
+        'enshrined\\svgSanitize\\' =>
         array (
             0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
         ),
-        'Stripe\\' => 
+        'Stripe\\' =>
         array (
             0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
-        'Sabberworm\\CSS\\' => 
+        'Sabberworm\\CSS\\' =>
         array (
             0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
         ),
-        'Masterminds\\' => 
+        'Masterminds\\' =>
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
@@ -558,9 +558,9 @@ class ComposerStaticInitb823d780538a4de103f62cac887db88d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb823d780538a4de103f62cac887db88d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb823d780538a4de103f62cac887db88d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb823d780538a4de103f62cac887db88d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4530d8e3909c9fd175e971fb8ef4b055::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4530d8e3909c9fd175e971fb8ef4b055::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit4530d8e3909c9fd175e971fb8ef4b055::$classMap;
 
         }, null, ClassLoader::class);
     }
