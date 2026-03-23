@@ -30,7 +30,7 @@ class Main {
 	 */
 	public function init() {
 		if ( ! defined( 'THEMEISLE_BLOCKS_VERSION' ) ) {
-			define( 'THEMEISLE_BLOCKS_VERSION', '3.1.5' );
+			define( 'THEMEISLE_BLOCKS_VERSION', '3.1.6' );
 		}
 
 		add_action( 'init', array( $this, 'autoload_classes' ), 9 );
@@ -87,6 +87,7 @@ class Main {
 			'\ThemeIsle\GutenbergBlocks\Server\Prompt_Server',
 			'\ThemeIsle\GutenbergBlocks\Plugins\Template_Cloud',
 			'\ThemeIsle\GutenbergBlocks\Server\Template_Cloud_Server',
+			'\ThemeIsle\GutenbergBlocks\Plugins\Atomic_Wind_Blocks',
 		);
 
 		$classnames = apply_filters( 'otter_blocks_autoloader', $classnames );

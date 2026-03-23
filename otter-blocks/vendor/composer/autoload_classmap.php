@@ -458,6 +458,7 @@ return array(
     'ThemeIsle\\GutenbergBlocks\\Integration\\Sendinblue_Integration' => $baseDir . '/inc/integrations/providers/class-sendinblue.php',
     'ThemeIsle\\GutenbergBlocks\\Main' => $baseDir . '/inc/class-main.php',
     'ThemeIsle\\GutenbergBlocks\\Patterns' => $baseDir . '/inc/class-patterns.php',
+    'ThemeIsle\\GutenbergBlocks\\Plugins\\Atomic_Wind_Blocks' => $baseDir . '/inc/plugins/class-atomic-wind-blocks.php',
     'ThemeIsle\\GutenbergBlocks\\Plugins\\Block_Conditions' => $baseDir . '/inc/plugins/class-block-conditions.php',
     'ThemeIsle\\GutenbergBlocks\\Plugins\\Dashboard' => $baseDir . '/inc/plugins/class-dashboard.php',
     'ThemeIsle\\GutenbergBlocks\\Plugins\\Dynamic_Content' => $baseDir . '/inc/plugins/class-dynamic-content.php',

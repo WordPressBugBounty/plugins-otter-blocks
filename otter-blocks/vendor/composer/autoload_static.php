@@ -506,6 +506,7 @@ class ComposerStaticInit4530d8e3909c9fd175e971fb8ef4b055
         'ThemeIsle\\GutenbergBlocks\\Integration\\Sendinblue_Integration' => __DIR__ . '/../..' . '/inc/integrations/providers/class-sendinblue.php',
         'ThemeIsle\\GutenbergBlocks\\Main' => __DIR__ . '/../..' . '/inc/class-main.php',
         'ThemeIsle\\GutenbergBlocks\\Patterns' => __DIR__ . '/../..' . '/inc/class-patterns.php',
+        'ThemeIsle\\GutenbergBlocks\\Plugins\\Atomic_Wind_Blocks' => __DIR__ . '/../..' . '/inc/plugins/class-atomic-wind-blocks.php',
         'ThemeIsle\\GutenbergBlocks\\Plugins\\Block_Conditions' => __DIR__ . '/../..' . '/inc/plugins/class-block-conditions.php',
         'ThemeIsle\\GutenbergBlocks\\Plugins\\Dashboard' => __DIR__ . '/../..' . '/inc/plugins/class-dashboard.php',
         'ThemeIsle\\GutenbergBlocks\\Plugins\\Dynamic_Content' => __DIR__ . '/../..' . '/inc/plugins/class-dynamic-content.php',
