@@ -30,7 +30,7 @@ class Main {
 	 */
 	public function init() {
 		if ( ! defined( 'THEMEISLE_BLOCKS_VERSION' ) ) {
-			define( 'THEMEISLE_BLOCKS_VERSION', '3.1.11' );
+			define( 'THEMEISLE_BLOCKS_VERSION', '3.2.0' );
 		}
 
 		add_action( 'init', array( $this, 'autoload_classes' ), 9 );
@@ -74,6 +74,7 @@ class Main {
 			'\ThemeIsle\GutenbergBlocks\Plugins\Dashboard',
 			'\ThemeIsle\GutenbergBlocks\Plugins\Dynamic_Content',
 			'\ThemeIsle\GutenbergBlocks\Plugins\FSE_Onboarding',
+			'\ThemeIsle\GutenbergBlocks\Plugins\Form_Submissions',
 			'\ThemeIsle\GutenbergBlocks\Plugins\Options_Settings',
 			'\ThemeIsle\GutenbergBlocks\Plugins\Stripe_API',
 			'\ThemeIsle\GutenbergBlocks\Render\Masonry_Variant',
