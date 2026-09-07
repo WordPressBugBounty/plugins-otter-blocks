@@ -456,6 +456,7 @@ return array(
     'ThemeIsle\\GutenbergBlocks\\Integration\\Form_Utils' => $baseDir . '/inc/integrations/class-form-utils.php',
     'ThemeIsle\\GutenbergBlocks\\Integration\\Mailchimp_Integration' => $baseDir . '/inc/integrations/providers/class-mailchimp.php',
     'ThemeIsle\\GutenbergBlocks\\Integration\\Sendinblue_Integration' => $baseDir . '/inc/integrations/providers/class-sendinblue.php',
+    'ThemeIsle\\GutenbergBlocks\\Loader' => $baseDir . '/inc/class-loader.php',
     'ThemeIsle\\GutenbergBlocks\\Main' => $baseDir . '/inc/class-main.php',
     'ThemeIsle\\GutenbergBlocks\\Patterns' => $baseDir . '/inc/class-patterns.php',
     'ThemeIsle\\GutenbergBlocks\\Plugins\\Atomic_Wind_Blocks' => $baseDir . '/inc/plugins/class-atomic-wind-blocks.php',

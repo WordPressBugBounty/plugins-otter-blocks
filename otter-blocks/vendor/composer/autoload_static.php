@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit556f279ce85f25f708f60329f1f7067c
+class ComposerStaticInit5a247aa373965f7dae85a8a3c4b3cb01
 {
     public static $files = array (
         '16e4325dd9bdbbd2ce8c9530b088e50b' => __DIR__ . '/..' . '/codeinwp/themeisle-sdk/load.php',
@@ -504,6 +504,7 @@ class ComposerStaticInit556f279ce85f25f708f60329f1f7067c
         'ThemeIsle\\GutenbergBlocks\\Integration\\Form_Utils' => __DIR__ . '/../..' . '/inc/integrations/class-form-utils.php',
         'ThemeIsle\\GutenbergBlocks\\Integration\\Mailchimp_Integration' => __DIR__ . '/../..' . '/inc/integrations/providers/class-mailchimp.php',
         'ThemeIsle\\GutenbergBlocks\\Integration\\Sendinblue_Integration' => __DIR__ . '/../..' . '/inc/integrations/providers/class-sendinblue.php',
+        'ThemeIsle\\GutenbergBlocks\\Loader' => __DIR__ . '/../..' . '/inc/class-loader.php',
         'ThemeIsle\\GutenbergBlocks\\Main' => __DIR__ . '/../..' . '/inc/class-main.php',
         'ThemeIsle\\GutenbergBlocks\\Patterns' => __DIR__ . '/../..' . '/inc/class-patterns.php',
         'ThemeIsle\\GutenbergBlocks\\Plugins\\Atomic_Wind_Blocks' => __DIR__ . '/../..' . '/inc/plugins/class-atomic-wind-blocks.php',
@@ -574,9 +575,9 @@ class ComposerStaticInit556f279ce85f25f708f60329f1f7067c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit556f279ce85f25f708f60329f1f7067c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit556f279ce85f25f708f60329f1f7067c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit556f279ce85f25f708f60329f1f7067c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5a247aa373965f7dae85a8a3c4b3cb01::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5a247aa373965f7dae85a8a3c4b3cb01::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit5a247aa373965f7dae85a8a3c4b3cb01::$classMap;
 
         }, null, ClassLoader::class);
     }
