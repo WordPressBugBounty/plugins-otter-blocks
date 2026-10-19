@@ -7,7 +7,7 @@
  * Plugin Name:       Otter – Page Builder Blocks & Extensions for Gutenberg
  * Plugin URI:        https://themeisle.com/plugins/otter-blocks
  * Description:       Create beautiful and attracting posts, pages, and landing pages with Otter – Page Builder Blocks & Extensions for Gutenberg. Otter comes with dozens of Gutenberg blocks that are all you need to build beautiful pages.
- * Version:           3.2.7
+ * Version:           3.2.8
  * Author:            ThemeIsle
  * Author URI:        https://themeisle.com
  * Requires at least:   6.6
@@ -27,7 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'OTTER_BLOCKS_BASEFILE', __FILE__ );
 define( 'OTTER_BLOCKS_URL', plugins_url( '/', __FILE__ ) );
 define( 'OTTER_BLOCKS_PATH', __DIR__ );
-define( 'OTTER_BLOCKS_VERSION', '3.2.7' );
+define( 'OTTER_BLOCKS_VERSION', '3.2.8' );
 define( 'OTTER_BLOCKS_PRO_SUPPORT', true );
 define( 'OTTER_BLOCKS_SHOW_NOTICES', false );
 define( 'OTTER_PRODUCT_SLUG', basename( OTTER_BLOCKS_PATH ) );
@@ -36,6 +36,10 @@ $vendor_file = OTTER_BLOCKS_PATH . '/vendor/autoload.php';
 
 if ( is_readable( $vendor_file ) ) {
 	require_once $vendor_file;
+}
+
+if ( class_exists( '\ThemeIsle\GutenbergBlocks\Base_CSS' ) ) {
+	\ThemeIsle\GutenbergBlocks\Base_CSS::isolate_bundled_parser();
 }
 
 $loader_file = OTTER_BLOCKS_PATH . '/inc/class-loader.php';
