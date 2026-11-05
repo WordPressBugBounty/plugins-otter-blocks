@@ -30,7 +30,7 @@ class Main {
 	 */
 	public function init() {
 		if ( ! defined( 'THEMEISLE_BLOCKS_VERSION' ) ) {
-			define( 'THEMEISLE_BLOCKS_VERSION', '3.2.8' );
+			define( 'THEMEISLE_BLOCKS_VERSION', '3.2.9' );
 		}
 
 		add_action( 'init', array( $this, 'autoload_classes' ), 9 );
@@ -646,7 +646,7 @@ class Main {
 		$status  = apply_filters( 'product_otter_license_status', false );
 
 		$is_pro           = 'valid' === $status;
-		$is_expired       = 'expired' === $status || 'active-expired' === $status;
+		$is_expired       = in_array( $status, array( 'expired', 'active_expired', 'active-expired' ), true );
 		$pro_product_slug = defined( 'OTTER_PRO_BASEFILE' ) ? basename( dirname( OTTER_PRO_BASEFILE ) ) : '';
 
 		if ( $is_pro ) {

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit14a762d6a169ff16a90a941283c7a5b1
+class ComposerStaticInit1ae0a828e38ceeea92578f76f35e483a
 {
     public static $files = array (
         '16e4325dd9bdbbd2ce8c9530b088e50b' => __DIR__ . '/..' . '/codeinwp/themeisle-sdk/load.php',
@@ -489,6 +489,7 @@ class ComposerStaticInit14a762d6a169ff16a90a941283c7a5b1
         'enshrined\\svgSanitize\\ElementReference\\Subject' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Subject.php',
         'enshrined\\svgSanitize\\ElementReference\\Usage' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Usage.php',
         'enshrined\\svgSanitize\\Exceptions\\NestingException' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Exceptions/NestingException.php',
+        'enshrined\\svgSanitize\\Exceptions\\RegexException' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Exceptions/RegexException.php',
         'enshrined\\svgSanitize\\Helper' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Helper.php',
         'enshrined\\svgSanitize\\Sanitizer' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Sanitizer.php',
         'enshrined\\svgSanitize\\data\\AllowedAttributes' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/AllowedAttributes.php',
@@ -505,9 +506,9 @@ class ComposerStaticInit14a762d6a169ff16a90a941283c7a5b1
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit14a762d6a169ff16a90a941283c7a5b1::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit14a762d6a169ff16a90a941283c7a5b1::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit14a762d6a169ff16a90a941283c7a5b1::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1ae0a828e38ceeea92578f76f35e483a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1ae0a828e38ceeea92578f76f35e483a::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1ae0a828e38ceeea92578f76f35e483a::$classMap;
 
         }, null, ClassLoader::class);
     }
