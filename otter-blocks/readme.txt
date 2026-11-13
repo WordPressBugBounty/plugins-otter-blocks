@@ -4,7 +4,7 @@ Tags: gutenberg blocks, gutenberg, blocks, page builder, fse
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 3.2.10
+Stable tag: 3.2.11
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -330,7 +330,7 @@ Sure, Otter is compatible with any WordPress theme.
 
 = Where can I get help? =
 
-If you encounter any difficulties or if you have questions about Otter, you can create a ticket on our [support forum](https://wordpress.org/support/plugin/otter-blocks/). Also, feel free to check our [documentation](https://docs.themeisle.com/article/1478-otter-blocks-documentation) to find out more about the features within the plugin and how to use it to its full potential.
+If you encounter any difficulties or if you have questions about Otter, you can ask our support team from the **Help** button on the Otter dashboard, or create a ticket on our [support forum](https://wordpress.org/support/plugin/otter-blocks/). Also, feel free to check our [documentation](https://docs.themeisle.com/article/1478-otter-blocks-documentation) to find out more about the features within the plugin and how to use it to its full potential.
 
 = What are the Patterns and how can I use them? =
 
@@ -344,10 +344,11 @@ Please follow the reporting protocols outlined on our [Security Page](https://th
 
 == Changelog ==
 
-##### [Version 3.2.10](https://github.com/Codeinwp/otter-blocks/compare/v3.2.9...v3.2.10) (2026-11-09)
+##### [Version 3.2.11](https://github.com/Codeinwp/otter-blocks/compare/v3.2.10...v3.2.11) (2026-11-13)
 
+- Added a Help panel to make it easier to contact support and find answers
+- Enhanced security
 - Updated dependencies
-- Enhanced security. Thanks to Jakub Herman for the responsible disclosure.
 
 
 

@@ -7,7 +7,7 @@
  * Plugin Name:       Otter – Page Builder Blocks & Extensions for Gutenberg
  * Plugin URI:        https://themeisle.com/plugins/otter-blocks
  * Description:       Create beautiful and attracting posts, pages, and landing pages with Otter – Page Builder Blocks & Extensions for Gutenberg. Otter comes with dozens of Gutenberg blocks that are all you need to build beautiful pages.
- * Version:           3.2.10
+ * Version:           3.2.11
  * Author:            ThemeIsle
  * Author URI:        https://themeisle.com
  * Requires at least:   6.6
@@ -27,7 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'OTTER_BLOCKS_BASEFILE', __FILE__ );
 define( 'OTTER_BLOCKS_URL', plugins_url( '/', __FILE__ ) );
 define( 'OTTER_BLOCKS_PATH', __DIR__ );
-define( 'OTTER_BLOCKS_VERSION', '3.2.10' );
+define( 'OTTER_BLOCKS_VERSION', '3.2.11' );
 define( 'OTTER_BLOCKS_PRO_SUPPORT', true );
 define( 'OTTER_BLOCKS_SHOW_NOTICES', false );
 define( 'OTTER_PRODUCT_SLUG', basename( OTTER_BLOCKS_PATH ) );
@@ -87,6 +87,47 @@ add_filter(
 			'logo'       => OTTER_BLOCKS_URL . '/assets/images/logo-alt.png',
 			'cta_link'   => tsdk_translate_link( tsdk_utmify( 'https://themeisle.com/plugins/otter-blocks/upgrade/?discount=LOYALUSER583&dvalue=60#pricing', 'otter-welcome', 'notice' ) ),
 		];
+	}
+);
+
+/*
+ * Opts into the SDK Support Hub: one Help button on Otter's screens and the
+ * deactivation window. The dashboard and Form Submissions screens already fire
+ * `themeisle_internal_page`, so no `pages` list is needed.
+ */
+add_filter(
+	'otter_blocks_support_hub_metadata',
+	function () {
+		return array(
+			// The SDK reads this while loading Otter, before Otter Pro's Licenser adds the
+			// product_otter_license_status filter, so read the stored license directly.
+			'is_pro' => defined( 'OTTER_PRO_BASEFILE' ) && class_exists( '\ThemeisleSDK\Modules\Licenser' ) && \ThemeisleSDK\Modules\Licenser::is_valid( OTTER_PRO_BASEFILE ),
+			'links'  => array(
+				array(
+					'icon' => 'book-alt',
+					'text' => __( 'Documentation', 'otter-blocks' ),
+					'url'  => \ThemeIsle\GutenbergBlocks\Pro::get_docs_url(),
+				),
+				array(
+					'icon' => 'groups',
+					'text' => __( 'Community Forum', 'otter-blocks' ),
+					'url'  => 'https://wordpress.org/support/plugin/otter-blocks/',
+				),
+			),
+		);
+	}
+);
+
+/*
+ * Otter also fires `themeisle_internal_page` in the block editor, which would put
+ * the Help button on every post, site and widget editor. Keep it to Otter's screens.
+ */
+add_filter(
+	'otter_blocks_hide_support_hub',
+	function ( $hide ) {
+		global $pagenow;
+
+		return $hide || in_array( $pagenow, array( 'post.php', 'post-new.php', 'site-editor.php', 'widgets.php' ), true );
 	}
 );
 
